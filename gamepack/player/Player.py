@@ -1,5 +1,5 @@
 
-from equipment.Equipment import Equipment
+from gamepack.equipment.Equipment import Equipment
 
 class Player(object):
 
