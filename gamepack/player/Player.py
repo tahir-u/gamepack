@@ -1,5 +1,6 @@
 
 from gamepack.equipment.Equipment import Equipment
+from gamepack.inventory.Inventory import Inventory
 
 class Player(object):
 
@@ -7,6 +8,7 @@ class Player(object):
         self.name = name
         self.health = 100
         self.equipment = Equipment()
+        self.inventory = Inventory()
     
     def get_equipment_stats(self):
         return str(self.equipment)
