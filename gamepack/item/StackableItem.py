@@ -3,8 +3,8 @@ from gamepack.item.Item import Item
 
 class StackableItem(Item):
 
-    def __init__(self, name = '', value = 0, count = 0):
-        Item.__init__(self, name, value, count)
+    def __init__(self, name = '', count = 0, value = 0):
+        Item.__init__(self, name, count, value)
         self.stackable = True
     
     def add_to_stack(self, item):
@@ -18,4 +18,4 @@ class StackableItem(Item):
             self.value = (self.value - (count * self.value))
     
     def __str__(self):
-        return super.__str__(self)
+        return Item.__str__(self)
