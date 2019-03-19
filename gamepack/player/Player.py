@@ -8,6 +8,7 @@ class Player(object):
     def __init__(self, name = ''):
         self.name = name
         self.health = 100
+        self.defense = 1
         self.equipment = Equipment()
         self.inventory = Inventory()
         self.moneypouch = MoneyPouch()
